@@ -1,0 +1,186 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #498134;
+}
+html,body{
+margin:0px;
+padding: 0px;
+height:100%;
+}
+#panel {
+    min-width: 99px;
+    float: left;
+    background-color: #141527;
+    width: 7.463157%;
+    height: 100%;
+    color:#FFF;
+    cursor: pointer;
+}
+#cuerpo {
+    min-width: 800px;
+    float: left;
+    background-color: #DDDDDD;
+    width: 87.875%;/*1390/1600*/
+    padding: 2.160303%;/*30/1390*/
+    height: 100%;
+}
+#superior {
+    width: 100%;
+     background-color: #141527;
+    height: 70px;
+    color: #FFF;
+    margin-top: -16px;
+}
+
+#contenedora {
+    width: 100%;
+}
+.centrado {
+    width: 1300px;
+    min-width: 900px;
+    margin: 0 auto;
+}
+#sec-login {
+    width: 37.5%;
+    background-color: #EEEEEE;
+    border: 1px solid #000;
+    border-radius: 14px;
+    margin: auto;
+    padding: 1.66666%;
+}
+#sec-login form {
+    display: block;
+}
+#sec-login h2 {
+    background-color: #5ef45e;
+    height: 30px;
+    color: #FFF;
+}
+ul li {
+    list-style: none;
+}
+#cuerpo-inicial {
+    margin-bottom: 2rem;
+}
+label {
+    margin: 1rem;
+}
+nav li {
+    display: block;
+    width: 100%;
+    height: 28px;
+    font-size: 1.1em;
+    margin-left: -25px;
+}
+#menu li a {
+    width: 100%;
+    height: 28px;
+    padding: 6px;
+}
+#cabecera {
+    padding-top: 12px;
+    height: 100px;
+    width: 100%;
+    border-bottom: 1px solid #000;
+    margin-bottom: 50px;
+    background-color: #FFF;
+}
+#index-cuerpo {
+    width: 100%;
+    background-color: #FFF;
+}
+#pie {
+    width: 100%;
+}
+.separador {
+    clear: both;
+}
+#menu a {
+    text-decoration: none;
+    color: #000;
+}
+#menu a:hover {
+    transition: all 0.2s ease-in-out 0s;
+    text-decoration: none;
+    color: #99ff00;
+    
+}
+#cuerpo-tabla {
+    width: 900px;
+    margin: auto;
+}
+.destacado {
+    height: 30px;
+    background-color: #FFF;
+    color: #000;
+    font-size: 1.2rem;
+    padding: 8px;
+    width: 100%;
+}
+#menu {
+    float: right;
+}
+#logo {
+    float: left;
+}
+.relleno {
+    padding-top: 5%;
+    padding-bottom: 25%;
+}
+.oculto {
+    display: none;
+}
+#lista-acc li {
+    width: 100%;
+ height: 25px;
+    padding: 2px;
+}
+
+#panel span {
+    height: 25px;
+    border-bottom: 1px solid #FFF;
+    padding: 6px;
+    text-align: center;
+    width: 100%;
+}
+#panel span a{
+    color:#FFF;
+    text-decoration: none;
+}
+
+#panel p {
+    width: 100%;
+}
+.miniatura{
+    width: 120px;
+    height: 89px;
+    padding: 4px;
+}
+.contenido-tabla{
+   width: 300px;
+}
+.contenido-tabla li{
+   width: 100%;
+   margin-bottom: 6px;
+}
+#tabla-index td{
+    height: 89px;
+    padding: 4px;
+}
+#tabla-index td{
+    border-bottom: 1px solid #000;
+ 
+}
+#tabla-index{
+    margin:auto;
+    text-align: center;
+}
+#lista-acc {
+    cursor: pointer;
+}
+
+#admin-table td {
+    padding: 10px;
+    text-align: center;
+}
