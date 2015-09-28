@@ -36,5 +36,11 @@ class Util {
         }
         return $enlaces;
     }
-
+    
+    static function getDocumentRoot (){
+        return $_SERVER['DOCUMENT_ROOT'];
+    }
+    static function getURI(){
+        return $_SERVER['REQUEST_URI'];
+    }
 }

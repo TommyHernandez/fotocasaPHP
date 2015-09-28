@@ -94,6 +94,7 @@ nav li {
     width: 100%;
 }
 .separador {
+    height: 5px;
     clear: both;
 }
 #menu a {

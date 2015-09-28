@@ -1,5 +1,5 @@
 <?php
-require './require/comun.php';
+require '../require/comun.php';
 $bd = new BaseDatos();
 $modelo = new ModeloUsuario($bd);
 //este metodo comprueba que estas atuentificado en la sesion como ROOT 
@@ -12,9 +12,8 @@ $filas = $modelo->getList($inicio, $rpp = 10);
 ?>
 <!DOCTYPE html>
 <html lang="es">
-<?php include './includes/head.php'; ?>
-  <script src="js/backend.js"></script>
-    
+    <?php  include '../includes/admin-head.php'; ?>
+    <script src="../js/backend.js"></script>
     <body>
         <header id="superior">
             <div id="conected">
