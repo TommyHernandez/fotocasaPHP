@@ -192,15 +192,19 @@ class ModeloUsuario {
         $sql = "select * from $this->tabla WHERE login=:login and isactivo = 1";
         $parametros["login"] = $login;
         $r = $this->bd->setConsulta($sql, $parametros);
-        $fila = $this->bd->getFila();
-        $usuario = new Usuario();
-        $usuario->set($fila);
-        if ($usuario->getIsActive() != 1) {
-            return -1;
-        } else if ($usuario->getClave() != $clave) {
-            return FALSE;
+        if ($r !=-1) {
+            $fila = $this->bd->getFila();
+            $usuario = new Usuario();
+            $usuario->set($fila);
+            if ($usuario->getIsActive() != 1) {
+                return -1;
+            } else if ($usuario->getClave() != $clave) {
+                return FALSE;
+            } else {
+                return $usuario;
+            }
         } else {
-            return $usuario;
+            return false;
         }
     }
 

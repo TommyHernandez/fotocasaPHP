@@ -36,11 +36,6 @@ height:100%;
 #contenedora {
     width: 100%;
 }
-.centrado {
-    width: 1300px;
-    min-width: 900px;
-    margin: 0 auto;
-}
 #sec-login {
     width: 37.5%;
     background-color: #EEEEEE;
@@ -49,9 +44,7 @@ height:100%;
     margin: auto;
     padding: 1.66666%;
 }
-#sec-login form {
-    display: block;
-}
+
 #sec-login h2 {
     background-color: #5ef45e;
     height: 30px;
@@ -84,10 +77,6 @@ nav li {
     width: 100%;
     border-bottom: 1px solid #000;
     margin-bottom: 50px;
-    background-color: #FFF;
-}
-#index-cuerpo {
-    width: 100%;
     background-color: #FFF;
 }
 #pie {

@@ -18,6 +18,10 @@ foreach ($filasfotos as $indice => $foto) {
         $idinsertadas[] = $foto->getIdinmueble();
     }
 }
+$err = 0;
+if (isset($_GET['er'])) {
+    $err = $_GET['er'];
+}
 include 'includes/head.php';
 ?>
 
@@ -48,6 +52,9 @@ include 'includes/head.php';
     </header>
     <section id="index-cuerpo">
         <div class="centrado">
+            <?php if ($err != 0) { ?>
+                <p class="message dismissible red">El usuario introducido no es correcto o no tienes acceso a la sección</p>
+            <?php } ?>
             <p class="destacado"><strong>Top 10 por fecha</strong></p>
             <div id="cuerpo-tabla">
                 <table id="tabla-index">

@@ -8,8 +8,8 @@ $modelo = new ModeloUsuario($bd);
 $objeto = $modelo->login($login, $clave);
 if ($objeto) {
     $sesion->setUsuario($objeto);
-    header("Location: ../adminpanel.php");
+    header("Location: ../ap-admin/adminpanel.php");
 } else {
     $sesion->cerrar();
-    header("Location: ../adminlogin.php?er=1");
+    header("Location: ../index.php?er=1");
 }
