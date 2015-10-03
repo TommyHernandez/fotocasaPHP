@@ -1,4 +1,7 @@
 <?php
+include_once '../require/comun.php';
+$err = 0;
+$err = Leer::get("er");
 include '../includes/admin-head.php';
 ?>
 <body>
@@ -15,12 +18,14 @@ include '../includes/admin-head.php';
                     <li><a href="buscador.php">Buscador</a>
                     </li>
                 </ul>
-
             </nav>
         </div>
         <div class="separador"></div>
     </header>
     <div id="container">
+        <?php if ($err != 0) { ?>
+            <p class="message dismissible red">La contraseña introducida no es correcta</p>
+        <?php } ?>
         <div id="sec-login">
             <h2>Admin-login</h2>
             <form name="loginform" action="../usuario/phplogin.php" method="POST" >
@@ -35,14 +40,21 @@ include '../includes/admin-head.php';
                     </div>
                 </div>
                 <div class="row" style="text-align: right; padding-right: 11px;">
-                <input type="submit" value="Conectar" class=""  />
+                    <input type="submit" value="Conectar" class=""  />
                 </div>
             </form>
         </div>
-
         <footer></footer>
     </div>
 
 </body>
-
 </html>
+<?php
+if ($autentificado) {
+    if ($sesion->isAdminLogin()) {
+        header("Location: panel.php");
+    } else {
+        
+    }
+}
+?>

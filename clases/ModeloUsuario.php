@@ -192,19 +192,19 @@ class ModeloUsuario {
         $sql = "select * from $this->tabla WHERE login=:login and isactivo = 1";
         $parametros["login"] = $login;
         $r = $this->bd->setConsulta($sql, $parametros);
-        if ($r !=-1) {
+        if ($r) {
             $fila = $this->bd->getFila();
             $usuario = new Usuario();
             $usuario->set($fila);
             if ($usuario->getIsActive() != 1) {
-                return -1;
+                return -1;// Si el usario no está activo
             } else if ($usuario->getClave() != $clave) {
-                return FALSE;
+                return -2;// Si no es la contraseña
             } else {
                 return $usuario;
             }
         } else {
-            return false;
+            return -3;// Si el usario no existe
         }
     }
 

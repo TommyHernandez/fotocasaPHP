@@ -37,13 +37,11 @@ include 'includes/head.php';
                     </li>
                     <li><a href="buscador.php">Buscador</a>
                     </li>
-                    <li><a href="adminlogin.php">Login</a>
-                    </li>
                     <li> <?php
                         if ($usuario) {
                             echo $adminpanel;
-                        }
-                        ?></li>
+                        } else {
+                            ?> <a href="ap-admin/">Conectarse</a><?php } ?></li>
                 </ul>
 
             </nav>

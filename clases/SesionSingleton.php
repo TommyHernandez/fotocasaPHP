@@ -16,7 +16,7 @@ class SesionSingleton {
         session_start();
     }
 
-    function cerrar() {
+    function destroy() {
         session_unset();
         session_destroy();
     }
