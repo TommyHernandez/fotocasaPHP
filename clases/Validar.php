@@ -72,10 +72,13 @@ class Validar {
             return FALSE;
         }
     }
-
+    /**
+     * Comprueba si lo que recibe es sea una cadena que empieza por la etiqueta <script> y termina por </script>
+     * @param type $v
+     * @return boolean
+     */
     static function isScript($v) {
         return self::isCondicion($v, '/^(<)(script)(>).*?(<)(\/)(script)(>)$/');
-        //veo que el inicio de la cadena sea <script> y el fin </script>
     }
 
     static function isLogin($v) {
